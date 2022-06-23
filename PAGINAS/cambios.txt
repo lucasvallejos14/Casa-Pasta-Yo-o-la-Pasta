@@ -1,0 +1,10 @@
+cambios realizados:
+
+index: palabras relacionadas a mi pagina , en un <meta>
+
+La cucina: se aplico las consignas pedidas en simples pasos. 
+ 1-mapa en la etiqueta .logo 
+
+ 2-mixin para la etiqueta .navbar
+
+ 3-extend aplicado en .footer , y en sus hijos llevando las propiedades necesarias para mi pagina.
