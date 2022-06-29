@@ -9,11 +9,6 @@ html {
   font-size: 62.5%;
 }
 
-.body_cucina {
-  background: url(../imagenes/fondococina.jpg);
-  background-repeat: repeat;
-}
-
 .logo {
   height: 30rem;
   border-radius: 50%;
@@ -43,21 +38,6 @@ html {
   border-color: black;
   border: 0.2rem solid;
   border-radius: 50%;
-}
-
-.menu_cucina {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  row-gap: 2rem;
-  align-items: center;
-  margin-top: 10rem;
-  background: transparent;
-  margin-bottom: 10rem;
-}
-.menu_cucina .menu_cucina-img {
-  box-shadow: 1rem 0.3rem 0.7rem rgb(107, 105, 105);
 }
 
 .footer, .footer__caja, .footer__boton-arriba {
@@ -96,4 +76,496 @@ html {
 }
 .footer__copy h5 strong {
   color: rgb(133, 38, 38);
+}
+
+.bodyIndex {
+  margin: 0%;
+  padding: 0%;
+  background: url(https://images.pexels.com/photos/6287575/pexels-photo-6287575.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: 100% 45%;
+  background-repeat: no-repeat;
+}
+
+.mainIndex {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  width: 100%;
+  height: 74rem;
+  margin-top: 50rem;
+  -moz-column-gap: 30rem;
+       column-gap: 30rem;
+  background-color: #ffe3c2;
+}
+.mainIndex__section1 {
+  align-items: center;
+  flex-direction: column;
+}
+.mainIndex__section1-titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20rem;
+  width: 50rem;
+  font-size: 7rem;
+  margin-top: 2rem;
+  margin-left: 6rem;
+}
+.mainIndex__section1-titulo:hover {
+  -webkit-animation: escala 4s linear;
+          animation: escala 4s linear;
+}
+@-webkit-keyframes escala {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+@keyframes escala {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+.mainIndex__section1-titulo hr {
+  width: 18rem;
+}
+.mainIndex__section1-subtitulo {
+  height: 21rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10rem;
+  margin-left: 5rem;
+  border-radius: 50%;
+  font-size: 4rem;
+  text-shadow: 0.2rem 0.1rem 0.5rem rgba(209, 197, 197, 0.946);
+  transition: background 1s;
+}
+.mainIndex__section1-subtitulo:hover {
+  background: #872424;
+  border-radius: 50%;
+  text-shadow: 0.2rem 0.1rem 0.5rem rgba(209, 197, 197, 0.946);
+  font-size: 5rem;
+  margin-left: 4rem;
+}
+.mainIndex__section1-subtitulo h3 {
+  font-size: 3.5rem;
+}
+.mainIndex__section2 {
+  margin-top: 0.5em;
+  width: 100rem;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 1.5fr;
+  grid-template-rows: 1fr 2fr 1fr 2fr;
+  grid-template-areas: "img_1 img_3 img_3 img_3" "img_1 img_3 img_3 img_3" "img_4 img_4 img_2 img_2" "img_4 img_4 img_2 img_2";
+  gap: 1rem;
+}
+.mainIndex__section2-img_1 {
+  grid-area: img_1;
+  transition: transform 2s;
+}
+.mainIndex__section2-img_1:hover {
+  transform: translate(-20rem);
+}
+.mainIndex__section2-img_2 {
+  grid-area: img_2;
+  transition: transform 2s;
+}
+.mainIndex__section2-img_2:hover {
+  transform: translateY(20rem);
+}
+.mainIndex__section2-img_3 {
+  grid-area: img_3;
+  transition: transform 2s;
+}
+.mainIndex__section2-img_3:hover {
+  transform: translateY(-20rem);
+}
+.mainIndex__section2-img_4 {
+  grid-area: img_4;
+  transition: transform 2s;
+}
+.mainIndex__section2-img_4:hover {
+  transform: translate(-10rem, 10rem);
+}
+
+.complemento {
+  border-top: 2rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffe3c2;
+  background-image: url(https://images.pexels.com/photos/2697229/pexels-photo-2697229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: 100% 100%;
+}
+.complemento__chefs {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  position: absolute;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "titulo_chefs titulo_chefs titulo_chefs" " chef1       chef2        chef3";
+  align-items: center;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  margin-top: 0;
+}
+.complemento__chefs-tituloChefs {
+  grid-area: titulo_chefs;
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 10rem;
+  font-size: 4rem;
+  color: rgb(255, 255, 253);
+  text-shadow: 0.2rem 0.5rem 0.7rem black;
+}
+.complemento__chefs-chef1 {
+  grid-area: chef1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.complemento__chefs-chef2 {
+  grid-area: chef2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.complemento__chefs-chef3 {
+  grid-area: chef3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.complemento__chefs-chef1 img {
+  width: 25rem;
+  height: 25rem;
+  text-shadow: 0.1rem 0.1rem 0.4rem white;
+}
+.complemento__chefs-chef1 img:hover {
+  -webkit-animation: imagen 1s linear;
+          animation: imagen 1s linear;
+  transition-duration: transform 1s;
+}
+@-webkit-keyframes imagen {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+@keyframes imagen {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+.complemento__chefs-chef2 img {
+  width: 25rem;
+  height: 25rem;
+  text-shadow: 0.1rem 0.1rem 0.4rem white;
+}
+.complemento__chefs-chef2 img:hover {
+  -webkit-animation: imagen 1s linear;
+          animation: imagen 1s linear;
+  transition-duration: transform 1s;
+}
+@keyframes imagen {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+.complemento__chefs-chef3 img {
+  width: 25rem;
+  height: 25rem;
+  text-shadow: 0.1rem 0.1rem 0.4rem white;
+}
+.complemento__chefs-chef3 img:hover {
+  -webkit-animation: imagen 1s linear;
+          animation: imagen 1s linear;
+  transition-duration: transform 1s;
+}
+@keyframes imagen {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+.complemento__chefs-chef1 h2 {
+  font-size: 1.5rem;
+  color: rgb(255, 255, 253);
+  text-shadow: 0.2rem 0.5rem 0.7rem black;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.complemento__chefs-chef2 h2 {
+  font-size: 1.5rem;
+  color: rgb(255, 255, 253);
+  text-shadow: 0.2rem 0.5rem 0.7rem black;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.complemento__chefs-chef3 h2 {
+  font-size: 1.5rem;
+  color: rgb(255, 255, 253);
+  text-shadow: 0.2rem 0.5rem 0.7rem black;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/**NOSOTROS**/
+.body__nosotros {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+  background-image: url(../imagenes/fondopastas2.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.main__nosotros {
+  width: 100%;
+  height: 50%;
+  margin: 0%;
+  bottom: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: transparent;
+  /**la Cucina**/
+  /**Ustedes**/
+  /**Contactanos**/
+  /**medias queries**/
+}
+.main__nosotros-titulo {
+  display: flex;
+  height: 100rem;
+  margin: 0%;
+  padding: 0% 2rem;
+  justify-content: center;
+  row-gap: 2rem;
+  align-items: center;
+  flex-direction: column;
+}
+.main__nosotros-titulo h1 {
+  font-size: 6rem;
+  color: rgb(239, 237, 237);
+  text-shadow: 1rem 0.3rem 0.7rem rgb(107, 105, 105);
+  width: 100%;
+  height: 20rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main__nosotros-titulo p {
+  font-size: 3rem;
+  color: rgb(239, 237, 237);
+  text-shadow: 1rem 0.3rem 0.7rem rgb(107, 105, 105);
+  width: 100%;
+  height: 20rem;
+  margin-top: 30rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: transparent;
+}
+.main__nosotros .section__nosotros {
+  width: 100%;
+  height: 100%;
+}
+.main__nosotros .section__nosotros img {
+  width: 100%;
+  height: 100%;
+}
+.main__nosotros .body_cucina {
+  background: url(../imagenes/fondococina.jpg);
+  background-repeat: repeat;
+}
+.main__nosotros .menu_cucina {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  align-items: center;
+  margin-top: 10rem;
+  background: transparent;
+  margin-bottom: 10rem;
+}
+.main__nosotros .menu_cucina-img {
+  box-shadow: 1rem 0.3rem 0.7rem rgb(107, 105, 105);
+}
+.main__nosotros .body__ustedes {
+  background: url(../imagenes/fondoustedess.jpg);
+  background-size: 100% 100%;
+  background-repeat: repeat;
+}
+.main__nosotros .titulo__ustedes {
+  text-align: center;
+  padding: 2.5rem 0;
+  margin-top: 10rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #e7dac2;
+          text-decoration-color: #e7dac2;
+  font-size: 4rem;
+  font-family: sans-serif rgb(239, 237, 237);
+  text-shadow: 1rem 0.3rem 0.7rem rgb(107, 105, 105);
+}
+.main__nosotros .main__ustedes {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+  background: transparent;
+}
+.main__nosotros .main__ustedes .carousel-item {
+  width: 50vw;
+  height: 60vh;
+}
+.main__nosotros .main__ustedes .carousel-item .imagenescarousel {
+  width: 50vh;
+  height: 60vh;
+}
+.main__nosotros .body__contacto {
+  background: url(../imagenes/fondocontacto.jpg);
+}
+.main__nosotros .main__contacto {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: transparent;
+  margin: 0%;
+}
+.main__nosotros .main__contacto-cajitaFormulario {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__nosotros .main__contacto-cajitaFormulario-form {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(133, 38, 38);
+  border-radius: 0.3rem;
+  color: black;
+  font-size: 1rem;
+  border-color: black;
+  border: 0.4rem solid black;
+}
+.main__nosotros .main__contacto-cajitaFormulario-form input textarea {
+  border: 0;
+  outline: none;
+  width: 28rem;
+}
+.main__nosotros .main__contacto-cajitaFormulario-form .field {
+  width: 20rem;
+  border: solid 0.5rem black;
+  padding: 1rem;
+}
+.main__nosotros .main__contacto-cajitaFormulario-form .field:focus {
+  border-color: rgb(219, 203, 54);
+}
+.main__nosotros .main__contacto-cajitaFormulario-form label {
+  font-size: 3rem;
+}
+.main__nosotros .main__contacto-cajitaFormulario-form .center-content {
+  text-align: center;
+}
+.main__nosotros .main__contacto-cajitaFormulario-form form p {
+  color: black;
+}
+.main__nosotros .main__contacto-cajitaFormulario-form .btn {
+  font-size: 2rem;
+  background-color: rgb(133, 38, 38);
+}
+@media (min-width: 990px) and (max-width: 1200px) {
+  .main__nosotros .navbar-nav {
+    font-size: 3rem;
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+  }
+  .main__nosotros .logo {
+    height: 30rem;
+    border-radius: 50%;
+  }
+  .main__nosotros .logo:hover {
+    border: 0.2rem solid #852626;
+  }
+  .main__nosotros .navbar {
+    background-color: #ffe3c2;
+    border-radius: 50%;
+  }
+  .main__nosotros .mainIndex__section2 {
+    display: none;
+  }
+}
+@media (min-width: 270px) and (max-width: 989px) {
+  .main__nosotros .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main__nosotros .navbar-toggler-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main__nosotros .carousel-item {
+    width: 70vw;
+    height: 70vh;
+  }
+  .main__nosotros .carousel-inner {
+    justify-content: center;
+    align-items: center;
+  }
+  .main__nosotros .imagenescarousel {
+    width: 70vh;
+    height: 70vh;
+  }
 }/*# sourceMappingURL=main.css.map */
