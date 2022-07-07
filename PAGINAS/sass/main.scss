@@ -10,7 +10,11 @@
 html{
     font-size: 62.5%;
 }
+<<<<<<< HEAD
 @import "./parciales/mainIndex";
+=======
+
+>>>>>>> 6df1daf83a8624fdedbb7e0287a5adc3df7083a8
 @import "./parciales/header";
 @import "./parciales/footer";
 .bodyIndex{
@@ -130,7 +134,10 @@ html{
         }
 }
 .complemento{
+<<<<<<< HEAD
     display: flex;
+=======
+>>>>>>> 6df1daf83a8624fdedbb7e0287a5adc3df7083a8
     border-top: 2rem;
     left: 0;
     right: 0;
@@ -140,7 +147,10 @@ html{
     background-color: #ffe3c2;
     background-image: url(https://images.pexels.com/photos/2697229/pexels-photo-2697229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-size: 100% 100%;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6df1daf83a8624fdedbb7e0287a5adc3df7083a8
         &__chefs{
             width: 100%;
             height: 100%;
@@ -153,7 +163,10 @@ html{
             align-items: center;
             column-gap: 2rem;
             margin-top: 0;
+<<<<<<< HEAD
                 
+=======
+>>>>>>> 6df1daf83a8624fdedbb7e0287a5adc3df7083a8
             
            
             &-tituloChefs{
@@ -295,7 +308,11 @@ html{
     background-image: url(../imagenes/fondopastas2.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
+<<<<<<< HEAD
     }
+=======
+}
+>>>>>>> 6df1daf83a8624fdedbb7e0287a5adc3df7083a8
 .main__nosotros{
         width: 100%;
         height: 50%;
@@ -328,7 +345,11 @@ html{
             align-items: center;
             text-align:center ;
         
+<<<<<<< HEAD
             }
+=======
+        }
+>>>>>>> 6df1daf83a8624fdedbb7e0287a5adc3df7083a8
         & p{
             font-size: 3rem;
             color: rgb(239, 237, 237);
@@ -340,6 +361,7 @@ html{
             align-items: center;
             text-align:center ;
             background: transparent;     
+<<<<<<< HEAD
             }
     }
 }    
@@ -356,6 +378,18 @@ html{
     display: none;
     }
 }  
+=======
+        }
+}
+.section__nosotros{
+    width: 100%;
+    height: 100%;
+    & img{
+        width: 100%;
+        height: 100%;  
+    }
+}
+>>>>>>> 6df1daf83a8624fdedbb7e0287a5adc3df7083a8
 
 
 
@@ -363,12 +397,20 @@ html{
 
 
 
+<<<<<<< HEAD
 .body__cucina{
+=======
+.body_cucina{
+>>>>>>> 6df1daf83a8624fdedbb7e0287a5adc3df7083a8
     background: url(../imagenes/fondococina.jpg);
     background-repeat: repeat;
 
 }
+<<<<<<< HEAD
 .menu__cucina{
+=======
+.menu_cucina{
+>>>>>>> 6df1daf83a8624fdedbb7e0287a5adc3df7083a8
     width: 100%;
     height: auto;
     display: flex;
@@ -380,7 +422,13 @@ html{
     margin-bottom: 10rem;
      
         &-img{
+<<<<<<< HEAD
             box-shadow:1rem 0.3rem 0.7rem rgb(107, 105, 105);}
+=======
+            box-shadow:1rem 0.3rem 0.7rem rgb(107, 105, 105) ;
+
+    }
+>>>>>>> 6df1daf83a8624fdedbb7e0287a5adc3df7083a8
 }
 
 
@@ -506,11 +554,23 @@ html{
         font-size: 3rem;
         column-gap: 3rem;
     }
+<<<<<<< HEAD
    
+=======
+    .logo{
+        height: 30rem;
+        border-radius: 50%;
+    }    
+        
+    .logo:hover{
+        border:0.2rem solid #852626;
+    }
+>>>>>>> 6df1daf83a8624fdedbb7e0287a5adc3df7083a8
     .navbar{
         background-color: #ffe3c2;
         border-radius: 50%;
     }
+<<<<<<< HEAD
     
 }
 
@@ -684,3 +744,39 @@ html{
 
 
   
+=======
+    .mainIndex__section2{
+        display: none;
+        
+    
+    }
+}
+
+
+
+@media (min-width:270px) and (max-width:989px){
+    
+    .navbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-toggler-icon{
+            display:flex;
+            align-items: center;
+            justify-content: center;}
+    }
+    
+    .carousel-item{
+        width: 70vw;
+        height: 70vh;
+        }
+    .carousel-inner{
+        justify-content: center;
+        align-items: center;
+        }
+    .imagenescarousel{
+        width: 70vh;
+        height: 70vh;}
+    }
+}
+>>>>>>> 6df1daf83a8624fdedbb7e0287a5adc3df7083a8

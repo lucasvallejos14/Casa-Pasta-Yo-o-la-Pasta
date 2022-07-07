@@ -20,7 +20,11 @@ $formas:(
 }
 .navbar{
     @include nav;
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 6df1daf83a8624fdedbb7e0287a5adc3df7083a8
 }
 
 .navbar-nav{
@@ -37,8 +41,11 @@ $formas:(
     border: 0.2rem solid;
     border-radius: 50%;
 }
+<<<<<<< HEAD
 @media (min-width:270px) and (max-width:466px){
     .logo{ 
     width: 20rem;
     height: 20rem;}
 }
+=======
+>>>>>>> 6df1daf83a8624fdedbb7e0287a5adc3df7083a8
