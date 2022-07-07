@@ -1,0 +1,44 @@
+$formas:(
+    altura: 30rem,
+    bordeR: 50%); 
+
+
+ .logo {  height: map-get($formas, altura);
+            border-radius: map-get($formas, bordeR);
+    }
+
+
+
+
+.logo:hover{
+    border:0.2rem solid #852626;
+}
+@mixin nav {
+    background: rgb(255,227,194);
+    border-radius: 50%;
+    
+}
+.navbar{
+    @include nav;
+
+}
+
+.navbar-nav{
+    font-size: 4rem ;
+    column-gap: 3rem;
+    
+}
+.nav-link{
+    border-radius: 50%;
+}
+.nav-link:hover{
+    background-color: #852626;
+    border-color: black;
+    border: 0.2rem solid;
+    border-radius: 50%;
+}
+@media (min-width:270px) and (max-width:466px){
+    .logo{ 
+    width: 20rem;
+    height: 20rem;}
+}

@@ -9,7 +9,7 @@
 html{
     font-size: 62.5%;
 }
-body{
+.bodyIndex{
     margin: 0%;
     padding: 0%;
     background: url(https://images.pexels.com/photos/6287575/pexels-photo-6287575.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
@@ -52,7 +52,7 @@ body{
 
 
 
-main{ 
+.mainIndex{ 
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
@@ -62,26 +62,26 @@ main{
     column-gap: 30rem ;
     background-color: #ffe3c2;
 }
-.section1{
+.mainIndex__section1{
     align-items: center;
     flex-direction: column;
     
     
 }   
 
-.div__titulo{
+.mainIndex__section1-titulo{
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     height: 20rem;
     width: 50rem;
-    align-items: center;
     font-size: 7rem;
     margin-top: 2rem;
     margin-left: 6rem;
     
 }
-.div__titulo:hover{
+.mainIndex__section1-titulo:hover{
     animation: escala 4s linear;
  
 }   
@@ -92,17 +92,17 @@ main{
     100%{-webkit-transform: scale(1.1);
         transform: scale(1.1);}
 }
-.div__titulo h1{
+.mainIndex__section1-titulo h1{
     text-shadow: 0.1rem 0.1rem 0.5rem rgb(122, 100, 100);
     font-size: 6rem;
     
 }
-.div__titulo hr {
+.mainIndex__section1-titulo hr {
     width: 18rem;
 
 }
 
-.div__subtitulo{
+.mainIndex__section1-subtitulo{
     height: 21rem;
     display: flex;
     justify-content: center;
@@ -115,7 +115,7 @@ main{
     text-shadow: 0.2rem 0.1rem 0.5rem rgba(209, 197, 197, 0.946);
     transition: background 1s;
 }
-.div__subtitulo:hover{
+.mainIndex__section1-subtitulo:hover{
     background:#872424 ;
     border-radius: 50%;
     text-shadow: 0.2rem 0.1rem 0.5rem rgba(209, 197, 197, 0.946);
@@ -124,12 +124,12 @@ main{
    
     
 }
-.div__subtitulo h3{
+.mainIndex__section1-subtitulo h3{
     font-size: 3.5rem;
 }
 
 
-.section2{
+.mainIndex__section2{
     margin-top: 0.5em;
     width: 100rem;
     height: auto;
@@ -145,100 +145,39 @@ main{
 }
 
 
-.img_1{ 
+.mainIndex__section2-img_1{ 
     grid-area: img_1;
    transition: transform 2s;
 }
-.img_1:hover{
+.mainIndex__section2-img_1:hover{
     transform: translate(-20rem);
     
 }
-.img_2{ grid-area: img_2;
+.mainIndex__section2-img_2{ 
+        grid-area: img_2;
         transition: transform 2s;
 }
-.img_2:hover{
+.mainIndex__section2-img_2:hover{
     transform: translateY(20rem);
 }
-.img_3{ grid-area: img_3;
+.mainIndex__section2-img_3{ 
+        grid-area: img_3;
         transition: transform 2s;
 }
-.img_3:hover{
+.mainIndex__section2-img_3:hover{
     transform: translateY(-20rem);
 }
-.img_4{ grid-area: img_4;
+.mainIndex__section2-img_4{ 
+        grid-area: img_4;
         transition: transform 2s;
 }
-.img_4:hover{
+.mainIndex__section2-img_4:hover{
     transform: translate(-20rem, 20rem);
     
     
 }
-.caja_footer{
-    width: 100%;
-    height: 10rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    bottom: 0;
-    background-color: #ffe3c2;
 
-}   
-.footer{
-        display: flex;
-        flex-direction: column;
-        justify-content:space-evenly;
-        align-items: center;
-} 
-.boton_arriba{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    
-
-}
-.iconInsta{
-    width:6rem;
-    height:6rem;
-}
-
-.iconTwitter{
-    width: 6rem;
-    height: 6rem;
-   
-}   
-.iconFacebook{
-    width: 6rem;
-    height: 6rem;
-    
-}
-.iconOutlook{
-    width: 6rem;
-    height: 6rem;
-    
-}
-
-.copy{
-   width: 100%;
-   height: 2rem;
-   position: relative;
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   font-family: 'Segoe UI';
-   background-color: #ffe3c2 ;
-}
-    h5 {
-        margin: 0;
-}
-
-strong{
-    color:rgb(133, 38, 38);
-   
-}
-
-.img-complemento{
+.complemento{
     border-top: 2rem;
     left: 0;
     right: 0;
@@ -251,7 +190,7 @@ strong{
 }
 
 
-.chefs{
+.complemento__chefs{
     width: 100%;
     height: 100%;
     display: grid;
@@ -265,71 +204,40 @@ strong{
     margin-top: 0;
     
 }
-.titulo_chefs{
+.complemento__chefs h1 {
     grid-area: titulo_chefs;
     width: 100%;
-    height: 100%;
+    height: 10%;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5rem;
-    margin-bottom: 0;
+    top: 0%;
+  
 }
-.chefs h1{
+.complemento__chefs-tituloChefs{
     font-size: 4rem;
     color: rgb(255, 255, 253);
     text-shadow: 0.2rem 0.5rem 0.7rem black;
     
 
 }
-.chefs h2{
-    font-size: 1.5rem;
-    color: rgb(255, 255, 253);
-    text-shadow: 0.2rem 0.5rem 0.7rem black;
-    margin-top: 1rem;
+.complemento__chefs-chef {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     
-
-}
-.chef1{
-    grid-area: chef1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
-    align-items: center;
-    text-shadow: 0.1rem 0.1rem 0.4rem white;
-    font-size: 1.5rem;
-
-}
-.chef2{
-    grid-area: chef2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
-    align-items: center;
-    text-shadow: 0.1rem 0.1rem 0.4rem white;
-    font-size: 1.5rem;
-}
-.chef3{
-    grid-area: chef3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
-    align-items: center;
-    text-shadow: 0.1rem 0.1rem 0.4rem white;
-    font-size: 1.5rem;
 }
 
-.imgchefs{
+.complemento__chefs-chef img{
     width: 25rem;
     height: 25rem;
-    text-shadow: 0.1rem 0.1rem 0.4rem white;
+    text-shadow: 0.1rem 0.1rem 0.4rem white; 
+
    
 }
-.imgchefs:hover{
+.complemento__chefs-chef img:hover{
     animation: imagen 1s linear;
     transition-duration: transform 1s;
 }   
@@ -342,13 +250,68 @@ strong{
 }
 
 
+.complemento__chefs-chef h2{
+    font-size: 1.5rem;
+    color: rgb(255, 255, 253);
+    text-shadow: 0.2rem 0.5rem 0.7rem black;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+
+}
+
+
+
+
+.footer, .footer__caja, .footer__boton-arriba {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .footer__boton-arriba {
+    position: absolute;
+    justify-content: center;
+  }
+  .footer__caja {
+    width: 100%;
+    height: 10rem;
+    flex-direction: row;
+    bottom: 0;
+    background-color: #ffe3c2;
+  }
+  .footer__caja-icon {
+    width: 6rem;
+    height: 6rem;
+  }
+  .footer__copy {
+    width: 100%;
+    height: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Segoe UI";
+    background-color: #ffe3c2;
+  }
+  .footer__copy h5 {
+    margin: 0;
+  }
+  .footer__copy h5 strong {
+    color: rgb(133, 38, 38);
+  }
+   
+
+
+
 
 
 
   /** NOSOTROS**/
 
 
-.body_nosotros{
+.body__nosotros{
     width: 100%;
     height: 100%;
     margin: 0%;
@@ -361,7 +324,7 @@ strong{
 
 
 
-.main_nosotros{
+.main__nosotros{
     width: 100%;
     height: 50%;
     margin: 0%;
@@ -375,7 +338,7 @@ strong{
 }
 
     
-.main_nosotros_titulo{
+.main__nosotros-titulo{
     display: flex;
     height: 100rem;
     margin:0%;
@@ -387,7 +350,7 @@ strong{
     flex-direction: column;
 }
 
-.main_nosotros_titulo h1{
+.main__nosotros-titulo h1{
     font-size: 6rem;
     color: rgb(239, 237, 237);
     text-shadow: 1rem 0.3rem 0.7rem rgb(107, 105, 105);
@@ -398,7 +361,7 @@ strong{
     text-align:center ;
 }
     
-.main_nosotros_titulo p{
+.main__nosotros-titulo p{
     font-size: 3rem;
     color: rgb(239, 237, 237);
     text-shadow: 1rem 0.3rem 0.7rem rgb(107, 105, 105);
@@ -414,11 +377,11 @@ strong{
 
 
 
-.section_nosotros{
+.section__nosotros{
     width: 100%;
     height: 100%;
 }
-.section_nosotros img{
+.section__nosotros img{
     width: 100%;
     height: 100%;
 }
@@ -474,7 +437,7 @@ strong{
 
 
 
-.body_ustedes{
+.body__ustedes{
     background:url(../imagenes/fondoustedess.jpg);
     background-size: 100% 100%;
     background-repeat: repeat;
@@ -491,7 +454,7 @@ strong{
 }
 
 
-.titulo_ustedes{
+.titulo__ustedes{
     text-align: center;
     padding: 2.5rem 0;
     margin-top: 10rem;
@@ -506,7 +469,7 @@ strong{
 
 
 
-.main_ustedes{
+.main__ustedes{
     margin-top: 2rem;
     margin-bottom: 5rem;
     width: 100%;
@@ -531,17 +494,17 @@ strong{
 
 
 
-.body_contacto{
+.body__contacto{
     background: url(../imagenes/fondocontacto.jpg);
 }
-.main_contacto{
+.main__contacto{
     width: 100%;
     height: 100%;
     display: flex;
     background: transparent;
     margin: 0%;
 }
-.cajitaformulario{
+.main__contacto-cajitaFormulario{
     height: 100%;
     width: 100%;
     display: flex;
@@ -576,6 +539,7 @@ input textarea{
 }
 
 .field{
+    width:20rem;
     border: solid 0.5rem black;
     padding: 1rem;
 
