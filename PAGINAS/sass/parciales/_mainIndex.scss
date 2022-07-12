@@ -5,59 +5,66 @@
         width: 100%;
         height: 100%;
         display: flex;
+        flex-direction: column;
+        
+        
+        
     } 
     
    
     .mainIndex__section1{
         width: 100%;
         height: 100%;
-        left: 0%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: "titulo"
-                             "subtitulo";
+        display:flex;
         align-items: center;
         flex-direction: column;
       
     }
-    
-    .mainIndex__section1-titulo{
-        grid-area: titulo;
-        display: block;
+    article{ 
+        
+        .mainIndex__section1-titulo{
+        height: 15rem;
+        width: 100%;
+        display: flex;
         text-shadow: 0.1rem 0.1rem 0.5rem rgb(122, 100, 100);
-        width: 100%;
-        height: 20rem;
-        font-size: 2rem;
+            h1{
+                font-size: 4rem;
+            }
+        }
     }
-    .mainIndex__section1-subtitulo{
-        grid-area: subtitulo;
+    article{
+
+        .mainIndex__section1-subtitulo{
         height: 20rem;
         width: 100%;
-        display: block;
+        display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
         margin-top: 10rem;
-       
-        border-radius: 50%;
-        font-size: 2rem;
-        transition: background 1s;}
-
+        border: radius 50%; 
+        transition: background 1s;
+            h3{
+                font-size: 2.5rem;
+            }
+        }
+    }        
     .mainIndex__section1-subtitulo:hover{
-        background:#872424 ;
         border-radius: 50%;
+        background:#872424 ;
         text-shadow: 0.2rem 0.1rem 0.5rem rgba(209, 197, 197, 0.946);
-        font-size: 2rem;
+         h3{
+            font-size: 2.5rem;
+         }
       }
 
     .mainIndex__section2{
-        display: none;
+       display: none;
     
-        &-img_1{display: none;}
-        &-img_2{display: none;}
-        &-img_3{display: none;}
-        &-img_4{display: none;}
+        &-img_1{display:none;}
+        &-img_2{display:none;}
+        &-img_3{display:none;}
+        &-img_4{display:none;}
      }
       
 }

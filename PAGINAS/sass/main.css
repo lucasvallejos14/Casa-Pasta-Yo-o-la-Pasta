@@ -9,54 +9,54 @@ html {
   font-size: 62.5%;
 }
 
-<<<<<<< HEAD
 @media (min-width: 270px) and (max-width: 466px) {
   .mainIndex {
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
   }
 
   .mainIndex__section1 {
     width: 100%;
     height: 100%;
-    left: 0%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "titulo" "subtitulo";
+    display: flex;
     align-items: center;
     flex-direction: column;
   }
 
-  .mainIndex__section1-titulo {
-    grid-area: titulo;
-    display: block;
-    text-shadow: 0.1rem 0.1rem 0.5rem rgb(122, 100, 100);
+  article .mainIndex__section1-titulo {
+    height: 15rem;
     width: 100%;
-    height: 20rem;
-    font-size: 2rem;
+    display: flex;
+    text-shadow: 0.1rem 0.1rem 0.5rem rgb(122, 100, 100);
+  }
+  article .mainIndex__section1-titulo h1 {
+    font-size: 4rem;
   }
 
-  .mainIndex__section1-subtitulo {
-    grid-area: subtitulo;
+  article .mainIndex__section1-subtitulo {
     height: 20rem;
     width: 100%;
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-top: 10rem;
-    border-radius: 50%;
-    font-size: 2rem;
+    border: radius 50%;
     transition: background 1s;
+  }
+  article .mainIndex__section1-subtitulo h3 {
+    font-size: 2.5rem;
   }
 
   .mainIndex__section1-subtitulo:hover {
-    background: #872424;
     border-radius: 50%;
+    background: #872424;
     text-shadow: 0.2rem 0.1rem 0.5rem rgba(209, 197, 197, 0.946);
-    font-size: 2rem;
+  }
+  .mainIndex__section1-subtitulo:hover h3 {
+    font-size: 2.5rem;
   }
 
   .mainIndex__section2 {
@@ -75,8 +75,6 @@ html {
     display: none;
   }
 }
-=======
->>>>>>> 6df1daf83a8624fdedbb7e0287a5adc3df7083a8
 .logo {
   height: 30rem;
   border-radius: 50%;
@@ -108,15 +106,12 @@ html {
   border-radius: 50%;
 }
 
-<<<<<<< HEAD
 @media (min-width: 270px) and (max-width: 466px) {
   .logo {
     width: 20rem;
     height: 20rem;
   }
 }
-=======
->>>>>>> 6df1daf83a8624fdedbb7e0287a5adc3df7083a8
 .footer, .footer__caja, .footer__boton-arriba {
   display: flex;
   flex-direction: column;
@@ -275,10 +270,7 @@ html {
 }
 
 .complemento {
-<<<<<<< HEAD
   display: flex;
-=======
->>>>>>> 6df1daf83a8624fdedbb7e0287a5adc3df7083a8
   border-top: 2rem;
   left: 0;
   right: 0;
@@ -446,13 +438,6 @@ html {
   justify-content: center;
   align-content: center;
   background: transparent;
-<<<<<<< HEAD
-=======
-  /**la Cucina**/
-  /**Ustedes**/
-  /**Contactanos**/
-  /**medias queries**/
->>>>>>> 6df1daf83a8624fdedbb7e0287a5adc3df7083a8
 }
 .main__nosotros-titulo {
   display: flex;
@@ -486,7 +471,6 @@ html {
   text-align: center;
   background: transparent;
 }
-<<<<<<< HEAD
 
 .section__nosotros {
   width: auto;
@@ -508,21 +492,6 @@ html {
 }
 
 .menu__cucina {
-=======
-.main__nosotros .section__nosotros {
-  width: 100%;
-  height: 100%;
-}
-.main__nosotros .section__nosotros img {
-  width: 100%;
-  height: 100%;
-}
-.main__nosotros .body_cucina {
-  background: url(../imagenes/fondococina.jpg);
-  background-repeat: repeat;
-}
-.main__nosotros .menu_cucina {
->>>>>>> 6df1daf83a8624fdedbb7e0287a5adc3df7083a8
   width: 100%;
   height: auto;
   display: flex;
@@ -533,29 +502,18 @@ html {
   background: transparent;
   margin-bottom: 10rem;
 }
-<<<<<<< HEAD
 .menu__cucina-img {
   box-shadow: 1rem 0.3rem 0.7rem rgb(107, 105, 105);
 }
 
 /**Ustedes**/
 .body__ustedes {
-=======
-.main__nosotros .menu_cucina-img {
-  box-shadow: 1rem 0.3rem 0.7rem rgb(107, 105, 105);
-}
-.main__nosotros .body__ustedes {
->>>>>>> 6df1daf83a8624fdedbb7e0287a5adc3df7083a8
   background: url(../imagenes/fondoustedess.jpg);
   background-size: 100% 100%;
   background-repeat: repeat;
 }
-<<<<<<< HEAD
 
 .titulo__ustedes {
-=======
-.main__nosotros .titulo__ustedes {
->>>>>>> 6df1daf83a8624fdedbb7e0287a5adc3df7083a8
   text-align: center;
   padding: 2.5rem 0;
   margin-top: 10rem;
@@ -568,12 +526,8 @@ html {
   font-family: sans-serif rgb(239, 237, 237);
   text-shadow: 1rem 0.3rem 0.7rem rgb(107, 105, 105);
 }
-<<<<<<< HEAD
 
 .main__ustedes {
-=======
-.main__nosotros .main__ustedes {
->>>>>>> 6df1daf83a8624fdedbb7e0287a5adc3df7083a8
   margin-top: 2rem;
   margin-bottom: 5rem;
   width: 100%;
@@ -585,7 +539,6 @@ html {
   row-gap: 2rem;
   background: transparent;
 }
-<<<<<<< HEAD
 .main__ustedes .carousel-item {
   width: 50vw;
   height: 60vh;
@@ -601,42 +554,20 @@ html {
 }
 
 .main__contacto {
-=======
-.main__nosotros .main__ustedes .carousel-item {
-  width: 50vw;
-  height: 60vh;
-}
-.main__nosotros .main__ustedes .carousel-item .imagenescarousel {
-  width: 50vh;
-  height: 60vh;
-}
-.main__nosotros .body__contacto {
-  background: url(../imagenes/fondocontacto.jpg);
-}
-.main__nosotros .main__contacto {
->>>>>>> 6df1daf83a8624fdedbb7e0287a5adc3df7083a8
   width: 100%;
   height: 100%;
   display: flex;
   background: transparent;
   margin: 0%;
 }
-<<<<<<< HEAD
 .main__contacto-cajitaFormulario {
-=======
-.main__nosotros .main__contacto-cajitaFormulario {
->>>>>>> 6df1daf83a8624fdedbb7e0287a5adc3df7083a8
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-<<<<<<< HEAD
 .main__contacto-cajitaFormulario-form {
-=======
-.main__nosotros .main__contacto-cajitaFormulario-form {
->>>>>>> 6df1daf83a8624fdedbb7e0287a5adc3df7083a8
   width: 50%;
   height: 50%;
   display: flex;
@@ -651,25 +582,16 @@ html {
   border-color: black;
   border: 0.4rem solid black;
 }
-<<<<<<< HEAD
 .main__contacto-cajitaFormulario-form input textarea {
-=======
-.main__nosotros .main__contacto-cajitaFormulario-form input textarea {
->>>>>>> 6df1daf83a8624fdedbb7e0287a5adc3df7083a8
   border: 0;
   outline: none;
   width: 28rem;
 }
-<<<<<<< HEAD
 .main__contacto-cajitaFormulario-form .field {
-=======
-.main__nosotros .main__contacto-cajitaFormulario-form .field {
->>>>>>> 6df1daf83a8624fdedbb7e0287a5adc3df7083a8
   width: 20rem;
   border: solid 0.5rem black;
   padding: 1rem;
 }
-<<<<<<< HEAD
 .main__contacto-cajitaFormulario-form .field:focus {
   border-color: rgb(219, 203, 54);
 }
@@ -690,31 +612,19 @@ html {
 /**medias queries**/
 @media (min-width: 990px) and (max-width: 1200px) {
   .navbar-nav {
-=======
-.main__nosotros .main__contacto-cajitaFormulario-form .field:focus {
-  border-color: rgb(219, 203, 54);
-}
-.main__nosotros .main__contacto-cajitaFormulario-form label {
-  font-size: 3rem;
-}
-.main__nosotros .main__contacto-cajitaFormulario-form .center-content {
-  text-align: center;
-}
-.main__nosotros .main__contacto-cajitaFormulario-form form p {
-  color: black;
-}
-.main__nosotros .main__contacto-cajitaFormulario-form .btn {
-  font-size: 2rem;
-  background-color: rgb(133, 38, 38);
-}
-@media (min-width: 990px) and (max-width: 1200px) {
-  .main__nosotros .navbar-nav {
->>>>>>> 6df1daf83a8624fdedbb7e0287a5adc3df7083a8
     font-size: 3rem;
     -moz-column-gap: 3rem;
          column-gap: 3rem;
   }
-<<<<<<< HEAD
+
+  .logo {
+    height: 30rem;
+    border-radius: 50%;
+  }
+
+  .logo:hover {
+    border: 0.2rem solid #852626;
+  }
 
   .navbar {
     background-color: #ffe3c2;
@@ -783,39 +693,15 @@ html {
 }
 @media (min-width: 270px) and (max-width: 466px) {
   .navbar {
-=======
-  .main__nosotros .logo {
-    height: 30rem;
-    border-radius: 50%;
-  }
-  .main__nosotros .logo:hover {
-    border: 0.2rem solid #852626;
-  }
-  .main__nosotros .navbar {
-    background-color: #ffe3c2;
-    border-radius: 50%;
-  }
-  .main__nosotros .mainIndex__section2 {
-    display: none;
-  }
-}
-@media (min-width: 270px) and (max-width: 989px) {
-  .main__nosotros .navbar {
->>>>>>> 6df1daf83a8624fdedbb7e0287a5adc3df7083a8
     display: flex;
     justify-content: center;
     align-items: center;
   }
-<<<<<<< HEAD
   .navbar-toggler-icon {
-=======
-  .main__nosotros .navbar-toggler-icon {
->>>>>>> 6df1daf83a8624fdedbb7e0287a5adc3df7083a8
     display: flex;
     align-items: center;
     justify-content: center;
   }
-<<<<<<< HEAD
 
   .logo {
     width: 20rem;
@@ -909,18 +795,4 @@ html {
     width: 15rem;
     height: 15rem;
   }
-=======
-  .main__nosotros .carousel-item {
-    width: 70vw;
-    height: 70vh;
-  }
-  .main__nosotros .carousel-inner {
-    justify-content: center;
-    align-items: center;
-  }
-  .main__nosotros .imagenescarousel {
-    width: 70vh;
-    height: 70vh;
-  }
->>>>>>> 6df1daf83a8624fdedbb7e0287a5adc3df7083a8
 }/*# sourceMappingURL=main.css.map */
