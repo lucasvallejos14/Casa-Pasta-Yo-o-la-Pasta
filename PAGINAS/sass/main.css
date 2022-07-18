@@ -9,14 +9,13 @@ html {
   font-size: 62.5%;
 }
 
-@media (min-width: 270px) and (max-width: 466px) {
+@media (min-width: 270px) and (max-width: 1300px) {
   .mainIndex {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
   }
-
   .mainIndex__section1 {
     width: 100%;
     height: 100%;
@@ -24,7 +23,6 @@ html {
     align-items: center;
     flex-direction: column;
   }
-
   article .mainIndex__section1-titulo {
     height: 15rem;
     width: 100%;
@@ -34,7 +32,6 @@ html {
   article .mainIndex__section1-titulo h1 {
     font-size: 4rem;
   }
-
   article .mainIndex__section1-subtitulo {
     height: 20rem;
     width: 100%;
@@ -49,7 +46,6 @@ html {
   article .mainIndex__section1-subtitulo h3 {
     font-size: 2.5rem;
   }
-
   .mainIndex__section1-subtitulo:hover {
     border-radius: 50%;
     background: #872424;
@@ -58,7 +54,6 @@ html {
   .mainIndex__section1-subtitulo:hover h3 {
     font-size: 2.5rem;
   }
-
   .mainIndex__section2 {
     display: none;
   }
@@ -616,16 +611,13 @@ html {
     -moz-column-gap: 3rem;
          column-gap: 3rem;
   }
-
   .logo {
     height: 30rem;
     border-radius: 50%;
   }
-
   .logo:hover {
     border: 0.2rem solid #852626;
   }
-
   .navbar {
     background-color: #ffe3c2;
     border-radius: 50%;
@@ -635,7 +627,6 @@ html {
   .main__nosotros-titulo {
     justify-content: space-between;
   }
-
   .main__nosotros-titulo p {
     font-size: 3rem;
     width: 90%;
@@ -647,14 +638,12 @@ html {
   .main__nosotros-titulo {
     justify-content: space-between;
   }
-
   .main__nosotros-titulo p {
     font-size: 3rem;
     width: 90%;
     height: 100%;
     margin-top: 3rem;
   }
-
   .section__nosotros {
     width: 100%;
     height: 100%;
@@ -663,13 +652,11 @@ html {
     align-items: center;
     flex-direction: column;
   }
-
   .section__nosotros-img {
     display: flex;
     width: 100%;
     height: 100%;
   }
-
   .section__nosotros-img2 {
     display: flex;
     width: 100%;
@@ -702,44 +689,36 @@ html {
     align-items: center;
     justify-content: center;
   }
-
   .logo {
     width: 20rem;
     height: 20rem;
   }
-
   .carousel-item {
     width: 70vw;
     height: 70vh;
   }
-
   .carousel-inner {
     justify-content: center;
     align-items: center;
   }
-
   .imagenescarousel {
     width: 70vh;
     height: 70vh;
   }
-
   .main__nosotros-titulo p {
     font-size: 1.5rem;
     width: 90%;
     height: 100%;
     margin-top: 3rem;
   }
-
   .main__nosotros-titulo {
     justify-content: space-between;
   }
-
   .section__nosotros-img {
     display: flex;
     width: 100%;
     height: 100%;
   }
-
   .section__nosotros-img2 {
     display: flex;
     width: 100%;

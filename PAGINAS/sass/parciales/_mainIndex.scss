@@ -1,6 +1,6 @@
 
 
-@media (min-width:270px) and (max-width:466px){
+@media (min-width:270px) and (max-width:1300px){
     .mainIndex{
         width: 100%;
         height: 100%;
@@ -60,6 +60,7 @@
 
     .mainIndex__section2{
        display: none;
+       
     
         &-img_1{display:none;}
         &-img_2{display:none;}
